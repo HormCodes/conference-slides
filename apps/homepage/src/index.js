@@ -4,7 +4,6 @@ const { writeToFile } = require('../../../libs/file-utils/src');
 const nxProjectsOutput = execSync('nx show projects --type app --json');
 const projects = JSON.parse(nxProjectsOutput);
 
-console.log(projects);
 
 const projectsPerYear = projects
   .filter((project) => project.includes('20'))
@@ -42,8 +41,6 @@ ${years
 </body>
 </html>
 `;
-
-console.log(content);
 
 writeToFile({
   directory: '../../dist',

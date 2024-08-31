@@ -8,8 +8,8 @@ const inputs = getInputs();
 const { slug } = inputs;
 
 writeToFile({
-  directory: '../../dist',
-  fileName: `${slug}.html`,
+  directory: `../../dist/${slug}`,
+  fileName: `index.html`,
   content: getRedirectPage(inputs),
 });
 
