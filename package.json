@@ -2,12 +2,16 @@
   "name": "@hormcodes/conference-talks",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many -t build"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
     "@nx/js": "19.6.4",
     "@nx/workspace": "19.6.4",
-    "nx": "^19.6.4"
+    "nx": "^19.6.4",
+    "prettier": "^3.3.3",
+    "vercel": "^37.2.1"
   }
 }

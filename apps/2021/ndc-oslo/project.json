@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "ndc-oslo-2021",
+  "projectType": "application",
+  "implicitDependencies": ["html-redirect"],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/html-redirect",
+        "command": "node ./src/index.js 'ndc-oslo-2021' 'Power of Civic-Tech Community | NDC Oslo 2021' 'https://docs.google.com/presentation/d/1cAJ5kqindvrmgJ5Iu3pV3vEBgrHw_HjrB4Xyn8DFR78/edit?usp=sharing' "
+      }
+    }
+  }
+}
