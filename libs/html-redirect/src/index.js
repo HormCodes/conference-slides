@@ -1,4 +1,4 @@
-const fs = require('node:fs');
+const { writeToFile } = require('../../file-utils/src');
 
 const DEFAULT_TITLE = 'Conference Talks by HormCodes';
 const DEFAULT_URL = 'https://github.com/HormCodes/conference-talks';
@@ -36,18 +36,3 @@ function getInputs() {
     url: process.argv[4] || DEFAULT_URL,
   };
 }
-
-function writeToFile({
-  directory = './',
-  fileName = 'output',
-  content = 'No output provided.',
-}) {
-  try {
-    fs.mkdirSync(directory);
-  } catch (e) {}
-  try {
-    fs.writeFileSync(`${directory}/${fileName}`, content);
-  } catch (e) {}
-}
-
-console.log(getRedirectPage(getInputs()));
