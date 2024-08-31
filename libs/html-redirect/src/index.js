@@ -1,7 +1,7 @@
 const { writeToFile } = require('../../file-utils/src');
 
-const DEFAULT_TITLE = 'Conference Talks by HormCodes';
-const DEFAULT_URL = 'https://github.com/HormCodes/conference-talks';
+const DEFAULT_TITLE = 'Slides from Conference Talks by HormCodes';
+const DEFAULT_URL = 'https://github.com/HormCodes/conference-slides';
 
 const inputs = getInputs();
 
