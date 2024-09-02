@@ -1,0 +1,10 @@
+{
+  "name": "@hormcodes/javazone-2024",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "slidev build --base /javazone-2024/ --out ../../../dist/javazone-2024",
+    "serve": "slidev",
+    "format": "slidev format"
+  }
+}
