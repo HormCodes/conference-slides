@@ -5,13 +5,20 @@
   "scripts": {
     "build": "nx run-many -t build"
   },
+  "workspaces": [
+    "apps/**/**",
+    "libs/**/**"
+  ],
   "private": true,
   "dependencies": {},
   "devDependencies": {
     "@nx/js": "19.6.4",
     "@nx/workspace": "19.6.4",
+    "@slidev/cli": "^0.49.29",
+    "@slidev/theme-default": "^0.25.0",
     "nx": "^19.6.4",
     "prettier": "^3.3.3",
-    "vercel": "^37.2.1"
+    "vercel": "^37.2.1",
+    "vue": "^3.4.38"
   }
 }
