@@ -5,6 +5,7 @@
   "scripts": {
     "build": "slidev build --base /javazone-2024/ --out ../../../dist/javazone-2024",
     "serve": "slidev",
-    "format": "slidev format"
+    "format": "slidev format",
+    "export": "slidev export --with-clicks --output ../../../dist/javazone-2024/exported.pdf"
   }
 }
