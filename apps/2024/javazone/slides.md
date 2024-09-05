@@ -4,6 +4,8 @@ theme: default
 themeConfig:
   primary: '#F26C4F'
 
+colorSchema: dark
+
 title: Using NX for Monorepo with Gradle Services
 info: |
   ## Slidev Starter Template
