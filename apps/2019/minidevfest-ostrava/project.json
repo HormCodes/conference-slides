@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "minidevfest-ostrava-2019",
+  "projectType": "application",
+  "implicitDependencies": ["html-redirect"],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/html-redirect",
+        "command": "node ./src/index.js 'minidevfest-ostrava-2019' 'miniDevFest Ostrava 2019' 'https://docs.google.com/presentation/d/1nrmG47KEy16sPMnLhOkUqCE-YEYMTrhwdI3EtFd2oU8/edit?usp=sharing' "
+      }
+    }
+  }
+}

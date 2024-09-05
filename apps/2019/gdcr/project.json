@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "gdcr-2019",
+  "projectType": "application",
+  "implicitDependencies": ["html-redirect"],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/html-redirect",
+        "command": "node ./src/index.js 'gdcr-2019' 'Global Day of Coderetreat' 'https://docs.google.com/presentation/d/1v_z7h0RCNoD8J6MbyonQ9B-XjNVCHiq18tqDxd4OlcY/edit?usp=sharing' "
+      }
+    }
+  }
+}
