@@ -32,7 +32,8 @@ ${years
     (year) =>
       `
 <h2>${year}</h2>
-<ul>${projectsPerYear[year].map((projectSlug) => `\n<li><a href="/${projectSlug}">${projectSlug}</a></li>`)}
+<ul>
+${projectsPerYear[year].map((projectSlug) => `<li><a href="/${projectSlug}">${projectSlug}</a></li>`).join('\n')}
 </ul>
 `,
   )
