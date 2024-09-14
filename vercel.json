@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:eventName/(\\d|presenter/\\d)",
+      "destination": "/:eventName",
+      "permanent": true
+    }
+  ]
+}
