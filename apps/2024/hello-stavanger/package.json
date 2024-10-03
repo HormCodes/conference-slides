@@ -1,0 +1,11 @@
+{
+  "name": "@hormcodes/hello-stavanger-2024",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "slidev build --base /hello-stavanger-2024/ --out ../../../dist/hello-stavanger-2024",
+    "serve": "slidev",
+    "format": "slidev format",
+    "export": "slidev export --with-clicks --output ../../../dist/hello-stavanger-2024/exported.pdf"
+  }
+}
