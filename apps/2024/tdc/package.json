@@ -1,0 +1,11 @@
+{
+  "name": "@hormcodes/tdc-2024",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "slidev build --base /tdc-2024/ --out ../../../dist/tdc-2024",
+    "serve": "slidev",
+    "format": "slidev format",
+    "export": "slidev export --with-clicks --output ../../../dist/tdc-2024/exported.pdf"
+  }
+}
